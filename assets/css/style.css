@@ -17,23 +17,15 @@
     font-weight: 400;
 }
 
-#gridContainer{
+.container-fluid{
     font-family: 'montserrat';
     color: #000000;
-    text-align: center;
+    overflow: auto;
     }
 
 /* GRID GENERAL */
 
-#gridContainer{
-    display: grid;
-    grid-template-rows: 160px auto auto auto;
-    grid-template-columns: 25% 25% 25% 25%; 
-    grid-template-areas: "header header header header"
-    "title title title title" 
-    "main main main main" 
-    "footer footer footer footer";          
-    }
+
 
 /* CONTENIDO */
 
@@ -45,10 +37,30 @@
     justify-content: left;
     }
 
+.nav{
+    background: rgb(255,138,4);
+    background: linear-gradient(90deg, rgba(255,138,4,1) 0%, rgba(255,230,59,1) 100%);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    }
+
+    
+
+
 .navigation__link--logo{
     width: 150px;
     padding: 0 30px;
+    
+    
 }
+
+.navigation__link--logo:hover{
+    transform: scale(1.2);
+    
+}
+
+
 
 .navigation__link{
     margin: 15px;
@@ -65,18 +77,18 @@
     background:  rgb(0, 33, 179);;
     }
 
-#title{
-    grid-area: title;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+
+.h1{
+    margin: 0%;
+    font-weight: 700;
+}
 
 #title{
-    background-color: rgb(197, 197, 197);
-    font-size: 30px;
+    background-color: rgb(122, 122, 122);
+    color: white;
+    font-size: 5px;
     font-weight: 700;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     }
 
@@ -104,21 +116,27 @@
     width: 700px;
     } 
 
-#text{
+.text{
     height: auto;
-    padding: 10px 50px;
+    padding: 15px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.text__headline{
-    padding: 10px;
-    font-size: 24px;
-    font-weight: 700;
-     }
+.h1{
+    font-size: 30px;
+}
 
-.text__paragraph{
+.h2{
+    font-weight: 700;
+}
+
+.textbox{
+    margin: 10px 70px;
+}
+
+.textbox__paragraph{
     padding: 10px;
     text-align: center;
     font-weight: 400;
@@ -231,6 +249,7 @@
     background-color: rgb(197, 197, 197);
     padding-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 
 #footer{
@@ -336,11 +355,6 @@
     
 }
 
-
-
-text-align: center;
-}
-
-li {
-    position: relative;
-    top: 20px;
+    background: rgb(255,197,115);
+    background: linear-gradient(90deg, rgba(255,197,115,1) 0%, rgba(255,235,95,1) 100%);
+    

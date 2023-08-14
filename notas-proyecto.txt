@@ -1,0 +1,33 @@
+
+
+
+COMMIT 2
+
+Apertura e incersión de SASS en el proyecto.
+
+implementación general del Bootstrap
+
+MODIFICACIONES AL HEADER
+Enlace al home por medio del logo con hover de transform-scale
+Implementación de gradiente al fondo del navbar
+
+-uso de transformaciones o transiciones
+
+ANIMACIONES
+Se implementaron animaciones a los h1 y h2
+
+SASS
+uso de partials - mirar el mixin
+
+
+IMPLEMENTACIÓN DEL SEO
+Implementación intensional de etiguetas H
+Cambio de texto en las etiquetas H para mejorar el SEO
+
+USO DE OPERADORES Y VARIABLES
+USO DEL MIXING
+
+
+
+
+USO DEL GITIGNORE
