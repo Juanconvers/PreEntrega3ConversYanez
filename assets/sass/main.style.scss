@@ -157,6 +157,8 @@ header {
     }
 }
 
+/* PIÉ DE PÁGINA */
+
 #footer {
     background-color: rgb(122, 122, 122);
     color: white;
@@ -193,23 +195,19 @@ header {
     }
 }
 
+/* FILTRO DE SELECCIÓN DE ROPA */
 
-
-
-
-
-
-#filter {
+.filter {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+    .filter__selecter {
+        padding: 30px 30px;
+    }
 }
 
-.filter__selecter {
-    padding: 30px 30px;
-}
 
 
 

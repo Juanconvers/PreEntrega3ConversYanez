@@ -11,18 +11,22 @@ MODIFICACIONES AL HEADER
 Enlace al home por medio del logo con hover de transform-scale
 Implementación de gradiente al fondo del navbar
 
+MODIFICACIONES
+
 -uso de transformaciones o transiciones
 
 ANIMACIONES
 Se implementaron animaciones a los h1 y h2
 
 SASS
-uso de partials - mirar el mixin
+uso de partials - mirar el mixin PENDIENTE
 
 
 IMPLEMENTACIÓN DEL SEO
 Implementación intensional de etiguetas H
 Cambio de texto en las etiquetas H para mejorar el SEO
+
+Se incluyeron meta descrpciones, keywords y se cambió el título de la página 	home
 
 USO DE OPERADORES Y VARIABLES
 USO DEL MIXING
@@ -31,3 +35,24 @@ USO DEL MIXING
 
 
 USO DEL GITIGNORE
+
+Incluir el CSS viejo
+El archivo de notas del proyecto
+
+
+
+PARA LA PRÓXIMA ENTREGA:
+Poner los cambios de p{agina inferiores tipo Goooooogle.1 -2 -3 Sig.
+
+
+
+
+
+
+
+
+
+
+
+
+
