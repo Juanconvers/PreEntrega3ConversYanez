@@ -3,19 +3,9 @@
     padding: 0;
 }
 
-/* FUENTES */
+/* PARTIALS */
 
-@font-face {
-    font-family: 'montserrat';
-    src: url(../font/Montserrat-Bold.ttf);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'montserrat';
-    src: url(../font/Montserrat-Regular.ttf);
-    font-weight: 400;
-}
+@import "_responsive.scss", "_texts.scss", "_buttons-interactive.scss";
 
 /* CONTAINER-FLUID DE BOOTSTRAP */
 
@@ -35,13 +25,16 @@ header {
         padding: 10px 30px;
         display: flex;
         align-items: center;
+
         .navigation__link--logo {
             width: 150px;
             padding: 0 30px;
         }
+
         .navigation__link--logo:hover {
             transform: scale(1.2);
         }
+
         .navigation__link {
             margin: 15px;
             font-size: 16px;
@@ -49,6 +42,7 @@ header {
             color: #000000;
             text-decoration-line: none;
         }
+
         .navigation__link:hover {
             color: white;
             background: rgb(0, 33, 179);
@@ -57,142 +51,15 @@ header {
     }
 }
 
-/* TÍTULO DE TODAS LA PÁGINAS */
-.title_h1 {
-    background-color: rgb(122, 122, 122);
-    color: white;
-    font-size: 5px;
-    font-weight: 700;
-    padding: 15px;
-    text-align: center;
-    .h1 {
-        margin: 0%;
-        font-weight: 700;
-        font-size: 30px;
-    }
-}
-
-/* BANNER PÁGINA PRINCIPAL */
+/* BANNER - IMÁGENES */
 .banner {
     padding: 15px;
     display: flex;
     justify-content: center;
+
     .banner__image {
         padding: 15px;
         width: 700px;
-    }
-}
-
-/* TEXTOS SECUNDARIOS */
-.textbox {
-    margin: 10px;
-    height: auto;
-    padding: 15px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    .textbox__title_h2 {
-        .h2 {
-            font-weight: 700;
-        }
-    }
-    .textbox__paragraph {
-        padding: 10px;
-        margin: 10px 70px;
-        font-weight: 400;
-        font-size: 20px;
-        color: #000000;
-    }
-    .textbox__location {
-        padding: 10px;
-        margin: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        align-content: center;
-        .textbox__location--map{
-            padding: 10px;
-            margin: 10px;
-            border-style: inset;
-        }
-        .textbox__paragraph {
-            padding: 10px;
-            margin: 10px;;
-            text-align: start;
-            font-size: 20px;
-            }
-        }
-        .textbox__policy {
-            padding: 10px;
-            margin: 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content:space-around;
-            align-content: center;
-            .h3{
-                font-size: 25px;
-            }
-            .textbox__paragraph {
-                padding: 10px;
-                margin: 10px;;
-                text-align: center;
-                font-size: 20px;
-            }
-        }
-    }
-
-
-/* NAVEGADOR TRES BOTONES / MENÚ DE BOTONES */
-.menu {
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    .menu__button {
-        width: 250px;
-        padding: 10px 30px;
-    }
-    .menu__button:hover {
-        transform: scale(1.2);
-    }
-}
-
-/* SECCIÓN DE COMPRAS */
-
-.shopping {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
-    justify-content: space-evenly;
-    gap: 60px;
-    .shopping__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .shopping__image {
-            height: 600px;
-        }
-        .shopping__image--camisa {
-            height: 450px;
-        }
-        .h3 {
-            padding: 7px;
-            font-weight: 700;
-            font-size: 20px;
-            color: #000000;
-        }
-        .shopping__link {
-            text-decoration-line: none;
-            font-weight: 400;
-            font-size: 20px;
-            color: #000000;
-        }
-        .shopping__link:hover {
-            color: white;
-            background: rgb(255, 190, 93);
-        }
     }
 }
 
@@ -208,14 +75,17 @@ header {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-evenly;
+
     .footer__info {
         padding-top: 20px;
         text-align: center;
+
         .footer__headline {
             font-weight: 700;
             font-size: 22px;
             margin: 15px;
         }
+
         .footer__link,
         .footer__paragraph {
             text-decoration-line: none;
@@ -225,6 +95,7 @@ header {
             margin: 15px;
             line-height: 35px;
         }
+
         .footer__link:hover {
             color: white;
             background: rgb(59, 59, 59);
@@ -233,161 +104,3 @@ header {
     }
 }
 
-/* FILTRO DE SELECCIÓN DE ROPA */
-
-.filter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    .filter__selecter {
-        padding: 30px 30px;
-    }
-}
-
-/* FORMULARIO DE CONTACTO */
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .form__item {
-        padding: 5px;
-        font-size: 20px;
-        font-weight: 700;
-        .form__input {
-            height: 30px;
-            width: 600px;
-        }
-        .form__message {
-            height: 90px;
-            width: 600px;
-        }
-        .form__input--button {
-            font-weight: 700;
-            width: 250px;
-            height: 50px;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* VISTA PARA MOVIL */
-@media (max-width: 480px) {
-.container-fluid {
-
-    header{
-        .nav{
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-            .navigation__link {
-                margin: 4px;
-                font-size: 16px;
-            }
-        }
-    }
-
-    .title_h1 {
-        .h1 {
-           font-size: 20px;
-        }
-    }
-
-    .banner {
-        
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        .banner__image {
-            width: 380px;
-        }
-    }
-
-    .textbox {
-        margin: 15px;
-        padding: 5px;   
-        h2{
-            font-size: 20px;
-        }
-        .textbox__paragraph {
-            font-size: 16px;
-            margin: 10px;
-        }
-        .textbox__location {
-            padding: 10px;
-            flex-direction: column;
-            flex-wrap: wrap;
-            .textbox__location--map{
-                width: 320px;
-            }
-            .textbox__paragraph {
-                text-align: center;        
-            }
-        }
-        .textbox__policy {
-            padding: 10px;
-            flex-direction: column;
-            flex-wrap: wrap;
-            .h3{
-                font-size: 16px;
-            }
-        }
-    }
-    
-        #filter {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            .filter__selecter {
-                padding: 7px 40px;
-            }
-        }
-
-        
-        .menu__button {
-            padding: 5px 20px;
-        }
-
-        .form {
-            .form__item {
-                font-size: 16px;
-                
-                .form__input {
-                    width: 390px;
-                }
-                .form__message {
-                    width: 390px;
-                }
-            }
-        }
-
-
-        .footer{
-            .footer__info {
-                padding-top: 10px;
-            }
-            .footer__link,
-            .footer__paragraph {
-                line-height: 25px;
-            }
-        }
-    }
-}
