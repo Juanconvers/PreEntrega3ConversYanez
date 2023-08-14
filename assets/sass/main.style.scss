@@ -74,16 +74,18 @@ header {
 
 /* BANNER PÁGINA PRINCIPAL */
 .banner {
+    padding: 15px;
     display: flex;
     justify-content: center;
     .banner__image {
+        padding: 15px;
         width: 700px;
     }
 }
 
 /* TEXTOS SECUNDARIOS */
 .textbox {
-    margin: 10px 70px;
+    margin: 10px;
     height: auto;
     padding: 15px 50px;
     display: flex;
@@ -102,7 +104,28 @@ header {
         font-size: 20px;
         color: #000000;
     }
-}
+    .textbox__location {
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content:space-around;
+        align-content: center;
+        .textbox__location--map{
+            padding: 10px;
+            margin: 10px;
+            border-style: inset;
+        }
+        .textbox__paragraph {
+            padding: 10px;
+            margin: 10px;;
+            text-align: start;
+            font-size: 20px;
+            }
+        }
+    }
+
 
 /* NAVEGADOR TRES BOTONES / MENÚ DE BOTONES */
 .menu {
@@ -175,7 +198,6 @@ header {
         .footer__headline {
             font-weight: 700;
             font-size: 22px;
-            
             margin: 15px;
         }
         .footer__link,
@@ -208,53 +230,40 @@ header {
     }
 }
 
+/* FORMULARIO DE CONTACTO */
 
-
-
-#text__location {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-content: center;
-}
-
-.text__location--item {
-    padding: 10px 30px;
-
-}
-
-.text__location--paragraph {
-    text-align: justify;
-    font-size: 24px;
-}
-
-#form {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .form__item {
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        .form__input {
+            height: 30px;
+            width: 600px;
+        }
+        .form__message {
+            height: 90px;
+            width: 600px;
+        }
+        .form__input--button {
+            font-weight: 700;
+            width: 250px;
+            height: 50px;
+        }
+    }
 }
 
-.form__item {
-    padding: 5px;
-    font-size: 20px;
-}
 
-.form__input {
-    height: 20px;
-    width: 600px;
-}
 
-.form__input--message {
-    height: 60px;
-    width: 600px;
-}
 
-.form__input--button {
-    width: 70px;
-    height: 30px;
-}
+
+
+
+
 
 
 
@@ -284,8 +293,14 @@ header {
         }
     }
 
-    .banner__image {
-        width: 320px;
+    .banner {
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        .banner__image {
+            width: 380px;
+        }
     }
 
     .textbox {
@@ -298,32 +313,57 @@ header {
             font-size: 16px;
             margin: 10px;
         }
+        .textbox__location {
+            padding: 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .textbox__location--map{
+                width: 320px;
+            }
+            .textbox__paragraph {
+                text-align: center;        
+            }
+        }
     }
     
+        #filter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            .filter__selecter {
+                padding: 7px 40px;
+            }
+        }
+
         
-    #filter {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
+        .menu__button {
+            padding: 5px 20px;
+        }
 
-    .filter__selecter {
-        padding: 7px 40px;
-    }
+        .form {
+            .form__item {
+                font-size: 16px;
+                
+                .form__input {
+                    width: 390px;
+                }
+                .form__message {
+                    width: 390px;
+                }
+            }
+        }
 
-    .menu__button {
-        padding: 5px 20px;
-    }
 
-    .footer__info {
-        padding-top: 10px;
+        .footer{
+            .footer__info {
+                padding-top: 10px;
+            }
+            .footer__link,
+            .footer__paragraph {
+                line-height: 25px;
+            }
+        }
     }
-
-    .footer__link,
-    .footer__paragraph {
-        line-height: 25px;
-    }
-}
 }
