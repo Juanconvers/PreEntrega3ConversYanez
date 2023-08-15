@@ -31,6 +31,9 @@ Se incluyeron meta descrpciones, keywords y se cambió el título de la página 
 USO DE OPERADORES Y VARIABLES
 USO DEL MIXING
 
+Uso de Maps-get, @Extend en archivo partial _texts.scss
+Uso de mixin en archivo partial _buttons-interactive.scss
+
 
 
 
@@ -41,8 +44,11 @@ El archivo de notas del proyecto
 
 
 
-PARA LA PRÓXIMA ENTREGA:
-Poner los cambios de p{agina inferiores tipo Goooooogle.1 -2 -3 Sig.
+		PARA LA PRÓXIMA ENTREGA:
+
+	Poner los cambios de p{agina inferiores tipo Goooooogle.1 -2 -3 Sig.
+	Poner los logos de redes sociales en el footer.
+	Suavisar las animaciones de los Hover en los enlaces.
 
 
 

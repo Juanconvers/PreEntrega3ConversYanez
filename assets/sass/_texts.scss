@@ -13,11 +13,17 @@
     font-weight: 400;
 }
 
+/* VARIABLES */
+
+$estilo-marcos{
+    marco-A: 10px;
+    
+}
+
 /* TÍTULO DE TODAS LA PÁGINAS */
 .title_h1 {
     background-color: rgb(122, 122, 122);
     color: white;
-    font-size: 5px;
     font-weight: 700;
     padding: 15px;
     text-align: center;
@@ -31,7 +37,7 @@
 
 /* TEXTOS SECUNDARIOS */
 .textbox {
-    margin: 10px;
+    margin: map-get($estilo-marcos, marco-A);
     height: auto;
     padding: 15px 50px;
     display: flex;
@@ -47,7 +53,7 @@
     }
 
     .textbox__paragraph {
-        padding: 10px;
+        padding: map-get($estilo-marcos, marco-A);
         margin: 10px 70px;
         font-weight: 400;
         font-size: 20px;
@@ -55,30 +61,27 @@
     }
 
     .textbox__location {
-        padding: 10px;
-        margin: 10px;
+        padding: map-get($estilo-marcos, marco-A);
+        margin: map-get($estilo-marcos, marco-A);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-content: center;
 
         .textbox__location--map {
-            padding: 10px;
-            margin: 10px;
-            border-style: inset;
+            padding: map-get($estilo-marcos, marco-A);
+            margin: map-get($estilo-marcos, marco-A);
         }
 
         .textbox__paragraph {
-            padding: 10px;
-            margin: 10px;
-            ;
+            @extent .textbox__location--map;
             text-align: start;
             font-size: 20px;
         }
     }
 
     .textbox__policy {
-        margin: 10px;
+        margin: map-get($estilo-marcos, marco-A);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -89,8 +92,8 @@
                 font-size: 25px;
             }
             .textbox__paragraph {
-                padding: 10px;
-                margin: 10px;
+                padding: map-get($estilo-marcos, marco-A);
+                margin: map-get($estilo-marcos, marco-A);
                 text-align: center;
                 font-size: 16px;
             }

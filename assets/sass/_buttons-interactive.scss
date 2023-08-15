@@ -1,44 +1,21 @@
 
-/* NAVEGADOR */
+/* MIXINS */
 
-header {
-    .nav {
-        background: rgb(255, 138, 4);
-        background: linear-gradient(90deg, rgba(255, 138, 4, 1) 0%, rgba(255, 230, 59, 1) 100%);
-        padding: 10px 30px;
-        display: flex;
-        align-items: center;
+@mixin flex-fila {
+    display: flex;
+    flex-direction: row;
+  }
 
-        .navigation__link--logo {
-            width: 150px;
-            padding: 0 30px;
-        }
+@mixin flex-columna {
+    display: flex;
+    flex-direction: row;
+  }
 
-        .navigation__link--logo:hover {
-            transform: scale(1.2);
-        }
-
-        .navigation__link {
-            margin: 15px;
-            font-size: 16px;
-            font-weight: 700;
-            color: #000000;
-            text-decoration-line: none;
-        }
-
-        .navigation__link:hover {
-            color: white;
-            background: rgb(0, 33, 179);
-            ;
-        }
-    }
-}
 
 /* NAVEGADOR TRES BOTONES / MENÚ DE BOTONES */
 .menu {
     padding: 15px;
-    display: flex;
-    flex-direction: row;
+    @include flex-fila;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
@@ -62,8 +39,7 @@ header {
     gap: 60px;
 
     .shopping__item {
-        display: flex;
-        flex-direction: column;
+        @include flex-columna;
         align-items: center;
 
         .shopping__image {
@@ -98,8 +74,7 @@ header {
 /* FILTRO DE SELECCIÓN DE ROPA */
 
 .filter {
-    display: flex;
-    flex-direction: row;
+    @include flex-fila;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
@@ -112,8 +87,7 @@ header {
 /* FORMULARIO DE CONTACTO */
 
 .form {
-    display: flex;
-    flex-direction: column;
+    @include flex-columna;
     justify-content: center;
     align-items: center;
 
